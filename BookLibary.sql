@@ -11,7 +11,7 @@ USE BookLibary
 GO
 
 CREATE TABLE Book
-(	BookCode INT UNIQUE,
+(	BookCode INT,
 	BookTitle VARCHAR(100) NOT NULL,
 	Author VARCHAR(50) NOT NULL,
 	Edition INT,
@@ -21,7 +21,7 @@ CREATE TABLE Book
 GO
 
 CREATE TABLE Member
-(	MemberCode INT UNIQUE,
+(	MemberCode INT,
 	Name VARCHAR(50) NOT NULL,
 	Address VARCHAR(100) NOT NULL,
 	PhoneNumber BIGINT,
